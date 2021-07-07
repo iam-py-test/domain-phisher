@@ -1,0 +1,20 @@
+var domainlist = ["another.com","example.com","example.net","èxample.com","example.xyz","secure.example.com","domain.com","google.com","secureexample.com","examplecom.evil.com","example.co","example.com","example.com","example.evil.com"]
+var alloweddomains = ['example.com',"secure.example.com"]
+var list = document.getElementById('spoofed')
+for(var t = 0;t < domainlist.length;t++){
+  var line = document.createElement('p')
+  const domain = document.createTextNode(domainlist[t])
+  const checkbox = document.createElement('input')
+  checkbox.type = "checkbox"
+  checkbox.onclick = function(){
+    if(alloweddomains.includes(domain.textContent) === true){
+      line.style.color = 'green'
+    }
+    else{
+      line.style.color = 'red'
+    }
+  }
+  line.appendChild(domain);
+  line.appendChild(checkbox)
+  list.appendChild(line)
+}
