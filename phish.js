@@ -7,6 +7,7 @@ for(var t = 0;t < domainlist.length;t++){
   const checkbox = document.createElement('input')
   checkbox.type = "checkbox"
   checkbox.onclick = function(){
+    var line = this.parentElement
     if(alloweddomains.includes(domain.textContent) === true){
       line.style.color = 'green'
     }
