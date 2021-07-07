@@ -2,8 +2,10 @@ var domainlist = ["another.com","example.com","example.net","èxample.com","exam
 var alloweddomains = ['example.com',"secure.example.com"]
 var list = document.getElementById('spoofed')
 for(var t = 0;t < domainlist.length;t++){
+  var current = Math.round(Math.random() * domainlist.length)
+  
   var line = document.createElement('p')
-  const domain = document.createTextNode(domainlist[t])
+  const domain = document.createTextNode(domainlist[current])
   const checkbox = document.createElement('input')
   checkbox.type = "checkbox"
   checkbox.onclick = function(){
