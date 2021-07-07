@@ -1,4 +1,4 @@
-var domainlist = ["another.com","example.com","example.net","èxample.com","example.xyz","secure.example.com","domain.com","google.com","secureexample.com","examplecom.evil.com","example.co","example.com","example.com","example.evil.com"]
+var domainlist = ["another.com","example.com","example.net","èxample.com","example.xyz","secure.example.com","domain.com","google.com","secureexample.com","examplecom.evil.com","example.co","example.com","example.com","example.evil.com","eample.com","example.com.evil.com","exɑmple.com","exampple.com"]
 var alloweddomains = ['example.com',"secure.example.com"]
 var list = document.getElementById('spoofed')
 for(var t = 0;t < domainlist.length;t++){
