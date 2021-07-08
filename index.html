@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Can you spot the phish?</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';style-src 'self' 'unsafe-inline'">
+  </head>
+  <body>
 <h1>Can you spot the phish?</h1>
 <div>
 Can you tell which domains are from example.com, and which are not?<br>
@@ -8,7 +16,8 @@ Can you tell which domains are from example.com, and which are not?<br>
   Once you have decided if it is phish check the checkbox.<br>
   If it turns green, it was legit.<br>
   If it turns red, it was phish.<br>
-  Don't feel bad if you miss one; many of these have extremely small diffrences.<br>
+  Don't feel bad if you miss one; many of these have extremely small or hard to spot diffrences.<br>
+  <a href="https://github.com/iam-py-test/domain-phisher">Source code</a>
 </div>
 <h4>Domains</h4>
 <div id="spoofed">
@@ -16,3 +25,5 @@ Can you tell which domains are from example.com, and which are not?<br>
   
 </div>
 <script src="phish.js"></script>
+  </body>
+</html>
